@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.main .main-section .text {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+}
+
+.main .main-section .hist {
+    position: absolute;
+    left: 36%;
+    top: 45%;
+}
+
+.main .main-section .text h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.main .main-section .text p.bday {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.main .main-section .text p.seoul {
+    font-size: 0.9rem;
+    color: #1e3a5f;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.main .main-section .text p.eng {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.main .main-section .text p.kor {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5rem;
+}
+
+.right-section {
+    position: fixed;
+    right: 0;
+    top: 5vh;
+    width: 25%;
+    height: 100%;
+    border-left: 1px solid #ddd;
+}
+
+.right-section aside {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.right-section aside .hist .ed {
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.right-section aside .hist .ed h3, .right-section aside .hist .work h3 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.right-section aside ul li {
+    list-style: circle;
+    text-indent: 1rem;
+    margin-left: 1rem;
+}
+
+.right-section aside .hist .ed ul li span, .right-section aside .hist .work ul li span {
+    display: block;
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.right-section aside .hist .ed ul li span address {
+    font-size: 0.8rem;
+    color: #1e3a5f;
+    font-weight: 400;
+}
+
+.right-section aside .hist .ed ul li span small, .right-section aside .hist .work ul li span small {
+    font-size: 0.7rem;
+    color: #b3b3b3;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.right-section aside .hist .ed ul li span small.edd {
+    margin-bottom: 0.3rem;
+}

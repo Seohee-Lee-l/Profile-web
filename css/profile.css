@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.main {
+    margin-top: 5vh;
+    margin-left: 18%;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.main .main-section {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fade-in 1.5s forwards;
+}
+
+.main .main-section .main-name {
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.main .main-section .main-role {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #555;
+    letter-spacing: 3px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.main .main-section .em {
+    position: absolute;
+    top: 55%;
+    left: 2rem;
+    font-size: 0.6rem;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: all .3s;
+}
+
+.main .main-section .em:hover {
+    color: #1e3a5f;
+    transform: translateY(3px);
+}
+
+.main .main-section .copy {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 3rem;
+    width: 15%;
+}

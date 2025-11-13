@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+.main-title {
+    position: fixed;
+    top: 0;
+    left: 18%;
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-title h4 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1e3a5f;
+    margin-left: 10px;
+}
+
+.main {
+    margin-left: 20%;
+    margin-top: 10vh;
+}
+
+.main .main-section .contact-box {
+    width: 70%;
+    margin-left: 5%;
+}
+
+.main .main-section .contact-box .box {
+    display: flex;
+    justify-content: left;
+    gap: 10%;
+    align-items: flex-start;
+}
+
+.main .main-section .contact-box .box div:first-child {
+    width:15%;
+}
+
+.main .main-section .contact-box p.sub {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e3a5f;
+}
+
+.main .main-section .contact-box a.link {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 2rem;
+    transition: all .3s ease;
+    position: relative;
+    padding: 0.2rem;
+    width: fit-content;
+}
+
+.main .main-section .contact-box a.link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(30, 58, 95, 0.4);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    z-index: -1;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.main .main-section .contact-box a.link:hover {
+    color: #faf8f5;
+}
+
+.main .main-section .contact-box a.link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.right-section {
+    border-left: 1px solid #ddd;
+    position: fixed;
+    top: 5vh;
+    right: 0;
+    /* right: -35%; */
+    width: 35%;
+    height: 95vh;
+}
+
+.right-section aside .message-box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.right-btn {
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+}
+
+.right-btn button {
+    width: 1.5rem;
+    height: 3rem;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-top: none;
+    background: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.right-btn button:hover {
+    background: #f0f0f0;
+}
+
+.right-section .message-box form h3 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin: 1.5rem 0;
+}
+
+.right-section .message-box form .input-box label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+}
+
+.right-section .message-box form .input-box input {
+    width: 70%;
+    height: 1.5rem;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-family: "Pretendard", sans-serif;
+}
+
+.right-section .message-box form .input-box textarea {
+    width: 100%;
+    height: 10rem;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 1rem;
+    font-family: "Pretendard", sans-serif;
+}
+
+.submitBtn {
+    display: flex;
+    justify-content: right;
+}
+
+.submitBtn button {
+    width: 6rem;
+    height: 1.6rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background: #1e3a5f;
+    color: #faf8f5;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Pretendard", sans-serif;
+    transition: all .3s ease;
+}
+
+.submitBtn button:hover {
+    background: #6e89ad;
+}

@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+/* 다크 모드 */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+body.dark-mode .main .pf-main div, body.dark-mode .right-section, body.dark-mode .right-btn button {
+    background-color: #121212;
+    border-color: #333;
+}
+
+body.dark-mode .right-btn button {
+    border-right: 1px solid #333;
+    color: #9eb7da;
+}
+
+body.dark-mode .right-btn button:hover {
+    background-color: #333;
+}
+
+body.dark-mode .main .pf-main div:hover {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .left-section .left .section1 ul li {
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .left-section .left .section1 ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .left-section .left .section2 ul li {
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .left-section .left .section2 ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .left-section .left .clear {
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .left-section .left .dark {
+    border-top: 1px solid #333;
+}
+
+body.dark-mode .left-section .left .dark .dlBtn {
+    color: #e0e0e0;
+}
+
+body.dark-mode .left-section .left #footer {
+    border-top: 1px solid #333;
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .left-section .left #footer .footer1 p {
+    color: #9eb7da;
+}
+
+body.dark-mode .left-section .left #footer .footer2 a {
+    color: #9eb7da;
+}
+
+body.dark-mode .left-section .left #footer .footer3 p, body.dark-mode .main .main-section .main-role {
+    color: #666;
+}
+
+body.dark-mode .left-section #header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .left-section #header button {
+    color: #e0e0e0;
+}
+
+body.dark-mode .main {
+    background-color: #121212;
+}
+
+body.dark-mode .main-title {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode ul li, body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, body.dark-mode p, body.dark-mode span, body.dark-mode .main .main-section .work .work-content .cbox2 p.sec-cap, body.dark-mode .main .main-section .contact-box a.link, body.dark-mode .right-section aside .hist .ed ul li span small {
+    color: #e0e0e0;
+}
+
+body.dark-mode .main .main-section p.kor, body.dark-mode .main .main-section p.eng, body.dark-mode .main .pf-main div p, body.dark-mode .main .main-section .work .work-content .cbox2 p.first-cap, body.dark-mode .right-section .message-box form h3, body.dark-mode .main .main-section .skill-box .sk .skills .skill p.sk-name, body.dark-mode .main .main-section .text h2, body.dark-mode .right-section aside .hist .ed ul li span, body.dark-mode .right-section aside .hist .work ul li span, body.dark-mode .main .main-section .em {
+    color: #ebebeb;
+}
+
+body.dark-mode .main-title h4, body.dark-mode .main .main-section h1, body.dark-mode .main .main-section h1 span, body.dark-mode .main .main-section .skill-box .sk h4, body.dark-mode .main .main-section h1 span, body.dark-mode .main .pf-main div h5, body.dark-mode .main .pf-main p span, body.dark-mode .main .main-section .work #work-title h3, body.dark-mode .main .main-section .work #work-title a, body.dark-mode .main .main-section .work .work-content .cbox2 .third-cap span, body.dark-mode .main .main-section .work .work-content .cbox2 p.link, body.dark-mode .main .main-section .contact-box .box > div p.sub, body.dark-mode .right-section .message-box form .input-box label, body.dark-mode .main .main-section .text p.seoul, body.dark-mode .right-section aside .hist .ed ul li span address, body.dark-mode .right-section aside .hist .ed h3, body.dark-mode .right-section aside .hist .work h3 {
+    color: #9eb7da;
+}
+
+body.dark-mode .main .main-section .work .work-content .cbox2 .link-box a:hover {
+    color: #9eb7da;
+}
+
+body.dark-mode .left-section {
+    background-color: #1e1e1e;
+    border-right: 1px solid #333;
+}
+
+body.dark-mode .fast button {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #9eb7da;
+    transition: all .3s;
+}
+
+body.dark-mode .fast button:hover {
+    background-color: #333;
+}
+
+body.dark-mode .right-section .message-box form .input-box input {
+    background-color: #272727;
+    border: 1px solid #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .right-section .message-box form .input-box textarea {
+    background-color: #272727;
+    border: 1px solid #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .submitBtn button {
+    background: #9eb7da;
+}
+
+body.dark-mode .submitBtn button:hover {
+    background: #1e3a5f;
+}
+
+body.dark-mode .main .main-section .contact-box a.link {
+    position: relative;
+    z-index: 2;
+}
+
+body.dark-mode .main .main-section .contact-box a.link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    z-index: -1;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #9eb7da;
+}
+
+body.dark-mode .main .main-section .contact-box a.link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+body.dark-mode .main .main-section .skill-box .skill .bar {
+    border-color: #9eb7da;
+}
+
+body.dark-mode .downBtn button {
+    background: rgba(158, 183, 218, 0.6);
+    backdrop-filter: blur(5px);
+    transition: all .3s;
+}
+
+body.dark-mode .downBtn button:hover {
+    background: rgba(116, 138, 168, 0.6);
+}
+
+body.dark-mode .left-section #header button {
+    position: relative;
+    z-index: 2;
+}
+
+body.dark-mode .left-section #header button::after {
+    background: rgba(116, 138, 168, 0.6);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    z-index: -1;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+body.dark-mode .left-section #header button:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+body.dark-mode .left-section .left .section1 ul li a {
+    position: relative;
+    z-index: 2;
+}
+
+body.dark-mode .left-section .left .section1 ul li a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(116, 138, 168, 0.6);
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+body.dark-mode .left-section .left .section1 ul li:hover a::after {
+    width: 100%;
+    opacity: 1;
+}
+
+body.dark-mode .left-section .left .section2 ul li a {
+    position: relative;
+    z-index: 2;
+}
+
+body.dark-mode .left-section .left .section2 ul li a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(116, 138, 168, 0.6);
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+body.dark-mode .left-section .left .section2 ul li:hover a::after {
+    width: 100%;
+    opacity: 1;
+}
+
+body.dark-mode .left-section .left .dark .dlBtn {
+    position: relative;
+    z-index: 2;
+}
+
+body.dark-mode .left-section .left .dark .dlBtn::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(116, 138, 168, 0.6);
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+body.dark-mode .left-section .left .dark .dlBtn:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+body.dark-mode .left-section .left .section1 ul li.selected {
+    background: rgba(116, 138, 168, 0.6);
+}
+
+body.dark-mode .left-section .left .section1 ul li.selected:hover a::after {
+    opacity: 0;
+}
+
+body.dark-mode .main .main-section .work #work-title a:hover {
+    color: #1e3a5f;
+}
+
+body.dark-mode .left-section .left .section2 ul li.selected {
+    background: rgba(116, 138, 168, 0.6);
+}
+
+body.dark-mode .left-section .left .section2 ul li.selected:hover a::after {
+    opacity: 0;
+}
+
+body.dark-mode .main .main-section h1 span {
+    border-color: #9eb7da;
+}
+
+/* 스크롤바 */
+body.dark-mode::-webkit-scrollbar {
+    width: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background-color: #9eb7da;
+}
+
+/* 포트폴리오 스크롤바 */
+body.dark-mode .main::-webkit-scrollbar {
+    width: 10px;
+}
+
+body.dark-mode .main::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+body.dark-mode .main::-webkit-scrollbar-thumb:hover {
+    background-color: #9eb7da;
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+.main .main-section .skill-box {
+    width: 80%;
+    margin: 10% auto;
+}
+
+.main .main-section .skill-box .skill {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main .main-section .skill-box .skill p.sk-name {
+    width: 10%;
+}
+
+.main .main-section .skill-box .sk {
+    width: 70%;
+    margin: 0 auto 4rem auto;
+}
+
+.main .main-section .skill-box .skill .bar {
+    width: 50%;
+    border: 1px dashed #1e3a5f;
+}
+
+.main .main-section .skill-box .sk h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1e3a5f;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.main .main-section .skill-box .sk .skills .skill p.sk-name {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.main .main-section .skill-box .sk .skills .skill p.per {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #666;
+}
+
+.main .main-section .skill-box .sk .skills .skill p, .bar {
+    margin-bottom: 0.9rem;
+}
+
+.main .main-section .skill-box .sk .skills .skill {
+    animation: text-reveal 1s forwards;
+    opacity: 0;
+    cursor: default;
+}
+
+/* Front-End 스킬들 순차적 애니메이션 */
+.main .main-section .skill-box .sk.front-end .skills .skill:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.main .main-section .skill-box .sk.front-end .skills .skill:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.main .main-section .skill-box .sk.front-end .skills .skill:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.main .main-section .skill-box .sk.front-end .skills .skill:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.main .main-section .skill-box .sk.front-end .skills .skill:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.main .main-section .skill-box .sk.front-end .skills .skill:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+/* Design 스킬들 순차적 애니메이션 */
+.main .main-section .skill-box .sk.design .skills .skill:nth-child(1) {
+    animation-delay: 1.4s;
+}
+
+.main .main-section .skill-box .sk.design .skills .skill:nth-child(2) {
+    animation-delay: 1.6s;
+}
+
+.main .main-section .skill-box .sk.design .skills .skill:nth-child(3) {
+    animation-delay: 1.8s;
+}
+
+/* Etc 스킬들 순차적 애니메이션 */
+.main .main-section .skill-box .sk.etc .skills .skill:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.main .main-section .skill-box .sk.etc .skills .skill:nth-child(2) {
+    animation-delay: 2.2s;
+}
+
+.main .main-section .skill-box .sk.etc .skills .skill:nth-child(3) {
+    animation-delay: 2.4s;
+}
+
+.main .main-section .skill-box .sk.etc .skills .skill:nth-child(4) {
+    animation-delay: 2.6s;
+}
+
+.main .main-section .skill-box .sk.etc .skills .skill:nth-child(5) {
+    animation-delay: 2.8s;
+}

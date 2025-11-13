@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+/* 스크롤바 */
+.main::-webkit-scrollbar {
+    width: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+    background-color: #1e3a5f;
+}
+
+
+.main {
+    overflow-y: auto;
+    margin-top: 5vh;
+    margin-left: 18%;
+    padding: 0;
+    padding-bottom: 2rem;
+    background: #fff;
+    height: calc(100vh - 5vh);
+    width: calc(82% - 0px);
+}
+
+.pf-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pf-main > div {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 2rem;
+    background: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc((100vh - 5vh) / 2);
+}
+
+.pf-main > div:nth-child(2n) {
+    border-right: none;
+    border-left: none;
+}
+
+.pf-main > div:nth-child(n+3) {
+    border-bottom: none;
+}
+
+.pf-main > div:nth-child(1) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.pf-main > div:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.pf-main > div:nth-child(odd) {
+    border-left: none;
+}
+
+.pf-main > div:hover {
+    background: #f8f9fa;
+}
+
+.pf-main > div h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1e3a5f;
+    margin-bottom: 1rem;
+}
+
+.pf-main > div p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.5;
+}
+
+.pf-main > div p span {
+    color: #1e3a5f;
+    font-weight: 600;
+}
+
+
+.main-title {
+    position: fixed;
+    top: 0;
+    left: 18%;
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-title h4 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1e3a5f;
+    margin-left: 10px;
+}
+
+.left-section .left .section2 ul li.selected {
+    background: rgba(30, 58, 95, 0.7);
+}
+
+.left-section .left .section2 ul li.selected a {
+    color: #faf8f5;
+}
+
+.left-section .left .section2 ul li.selected:hover a::after {
+    opacity: 0;
+}
+
+#work01, #work02, #work03, #work04, #work05, #work06 {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#work-title {
+    margin-left: 5%;
+}
+
+#work-title h3 {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+}
+
+#work-title a {
+    display: block;
+    width: 10%;
+    margin-bottom: 1.3rem;
+    font-size: 0.7rem;
+    color: #1e3a5f;
+    font-weight: 300;
+    transition: all .3s ease;
+    position: relative;
+}
+
+#work-title a:hover {
+    color: #6e89ad;
+}
+
+.main .main-section .work .work-content {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main .main-section .work .work-content .caption {
+    display: flex;
+    gap: 15%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.main .main-section .work .work-content .caption .cbox1 p {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 0.7rem;
+    color: #555;
+}
+
+.main .main-section .work .work-content .caption .first-cap,
+.main .main-section .work .work-content .caption .cbox2 .first-cap {
+    font-weight: 600;
+    color: #000;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.main .main-section .work .work-content .caption .sec-cap,
+.main .main-section .work .work-content .caption .cbox2 .sec-cap {
+    font-weight: 400;
+    color: #555;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 1.5rem;
+    line-height: 1.3rem;
+}
+
+.main .main-section .work .work-content .caption .third-cap,
+.main .main-section .work .work-content .caption .cbox2 .third-cap {
+    font-weight: 400;
+    color: #000;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 1.5rem;
+    line-height: 1.4rem;
+}
+
+.main .main-section .work .work-content .caption .third-cap span.highlight {
+    color: #1e3a5f;
+    font-weight: 600;
+}
+
+.main .main-section .work .work-content .caption p.link,
+.main .main-section .work .work-content .caption .cbox2 p.link {
+    font-size: 1rem;
+    color: #1e3a5f;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.main .main-section .work .work-content .caption .link-box,
+.main .main-section .work .work-content .caption .cbox2 .link-box {
+    display: flex;
+    gap: 20px;
+}
+
+.main .main-section .work .work-content .caption .link-box a,
+.main .main-section .work .work-content .caption .cbox2 .link-box a {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #a1a1a1;
+    transition: all .3s ease;
+    margin-bottom: 10%;
+}
+
+.main .main-section .work .work-content .caption .link-box a:hover,
+.main .main-section .work .work-content .caption .cbox2 .link-box a:hover {
+    color: #1e3a5f;
+}
+
+
+.img {
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 2rem;
+}
+
+.img ul li {
+    list-style: none;
+    flex-shrink: 0;
+    width: auto;
+    height: 550px;
+}
+
+.img ul li img {
+    width: auto;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    pointer-events: none;
+    display: block;
+    object-fit: contain;
+}
+
+.img:active {
+    cursor: grabbing;
+}
+
+.img ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+/* 기본 애니메이션 클래스 */
+.infinite-slide {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 호버시 애니메이션 일시정지 */
+.img:hover ul {
+    animation-play-state: paused;
+}
+
+.fast {
+    position: absolute;
+    top: 22%;
+    left: 0;
+}
+
+.fast button {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.2rem 0.7rem;
+    background: transparent;
+    color: #1e3a5f;
+    font-weight: 300;
+    font-family: "Pretendard", sans-serif;
+    cursor: pointer;
+    transition: all .1s ease;
+    width: 50px;
+}
+
+.fast button:hover {
+    background: #f8f9fa;
+    transition: all .1s ease;
+}
+
+.downBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 3%;
+}
+
+.downBtn button {
+    width: 50px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background:rgba(30, 58, 95, 0.6);
+    backdrop-filter: blur(5px);
+    color: #faf8f5;
+    font-weight: 500;
+    font-family: "Pretendard", sans-serif;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.downBtn button:hover {
+    background: #1e3a5f;
+    transition: all .3s;
+}
