@@ -43,7 +43,7 @@
 
 .main .main-section .em {
     position: absolute;
-    top: 55%;
+    top: 63%;
     left: 2rem;
     font-size: 0.6rem;
     color: #000;
@@ -59,7 +59,7 @@
 
 .main .main-section .copy {
     position: absolute;
-    bottom: 2rem;
+    top: 65%;
     left: 2rem;
     font-size: 3rem;
     width: 15%;
