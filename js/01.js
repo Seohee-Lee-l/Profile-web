@@ -25,10 +25,14 @@ $(function() {
         
         // 이미지가 로드된 후 계산
         let loadedImages=0;
+        // 이미지 로드 완류 카운터
+
         const totalImages=$images.length/2;
+        // 이미지 복제본 고려
         
         $images.find('img').on('load', function() {
             loadedImages++;
+            
             if (loadedImages===$images.length) {
                 calculateAndSetSlide();
             }
@@ -39,15 +43,20 @@ $(function() {
             
             for (let i=0; i<totalImages; i++) {
                 const $img=$images.eq(i).find('img');
-                totalWidth+=$img.outerWidth()+16;
+                totalWidth+=$img.outerWidth(true)+16;
             }
             
             // CSS 애니메이션
             const animationName=containerSelector.replace('.', '')+'Animation';
             const keyframes= `
                 @keyframes ${animationName} {
-                    0% { transform: translateX(0); }
-                    100% { transform: translateX(-${totalWidth}px);}
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-${totalWidth}px);
+                    }
                 }
             `;
             
@@ -105,26 +114,40 @@ $(function() {
             let progress=0;
             if (totalWidth>0) {
                 progress=Math.abs(currentX)/totalWidth;
+                // Math.abs() >> 절대값 반환
                 progress=progress%1;
             }
             
             // 새로운 애니메이션 생성 (현재 위치부터 시작)
             const fastAnimationName=animationName+'Fast';
             const startX=-totalWidth*progress;
+            // - : 왼쪽으로 이동 (양수는 오른쪽 이동)
             const endX=startX-totalWidth;
             
             const fastKeyframes= `
                 @keyframes ${fastAnimationName} {
-                    0% { transform: translateX(${startX}px); }
-                    100% { transform: translateX(${endX}px); }
+                    0% {
+                        transform: translateX(${startX}px);
+                    }
+
+                    100% {
+                        transform: translateX(${endX}px);
+                    }
                 }
             `;
             
             // 기존 fast 애니메이션 제거 후 새로 추가
             const $style=$('#dynamic-animations');
             let styleContent=$style.html();
+            // <style> 태그 안에 들어있는 CSS 코드 전체를 가져옴
+
             styleContent=styleContent.replace(new RegExp(`@keyframes ${fastAnimationName}[^}]*}[^}]*}`, 'g'), '');
+            // 기존에 동일한 이름의 keyframes(애니메이션)가 있다면 제거 >> 빈 문자열로 대체
+            // @keyframes fastAnimationName { ... } 전체를 정규식으로 찾아서 제거
+
             $style.html(styleContent + fastKeyframes);
+            // 새로운 fastKeyframes 추가
+            // <style> 태그 내 기존과 동일한 이름의 애니메이션 제거 + 새 keyframes(애니메이션) 추기
             
             $ul.css({
                 'animation': `${fastAnimationName} 15s linear infinite`,
@@ -146,6 +169,7 @@ $(function() {
             
             // 전체 이동 거리 계산
             const totalWidth=$container.data('totalWidth') || 0;
+            // 0 : 기본값(계산이 안 된 경우, 값이 없는 경우 0으로 처리)
             
             // 현재 진행률 계산
             let progress=0;
@@ -161,8 +185,13 @@ $(function() {
             
             const slowKeyframes= `
                 @keyframes ${slowAnimationName} {
-                    0% {transform: translateX(${startX}px);}
-                    100% {transform: translateX(${endX}px);}
+                    0% {
+                        transform: translateX(${startX}px);
+                    }
+
+                    100% {
+                        transform: translateX(${endX}px);
+                    }
                 }
             `;
             
