@@ -297,6 +297,10 @@ body.dark-mode .main .main-section h1 span {
     border-color: #9eb7da;
 }
 
+body.dark-mode .img ul li img {
+    border: 1px solid #414141;
+}
+
 /* 스크롤바 */
 body.dark-mode::-webkit-scrollbar {
     width: 10px;
