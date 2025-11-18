@@ -115,6 +115,7 @@ $(function() {
             if (totalWidth>0) {
                 progress=Math.abs(currentX)/totalWidth;
                 // Math.abs() >> 절대값 반환
+                
                 progress=progress%1;
             }
             
