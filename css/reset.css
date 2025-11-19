@@ -13,5 +13,5 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 li {list-style:none;}
 img,fieldset,iframe{border:0;}
 input { vertical-align:middle; }
- .skip { font-size:0; width:0; height:0; line-height:0; position:absolute; left:-9999px; }
+.skip { font-size:0; width:0; height:0; line-height:0; position:absolute; left:-9999px; }
 .cf:after {content:"";display:block;clear:both;}
