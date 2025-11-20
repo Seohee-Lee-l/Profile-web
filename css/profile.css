@@ -68,7 +68,7 @@
 
 
 /* Responsive Design (tablet and mobile) */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1024px) {
     .main {
         margin-left: 25%;
     }
