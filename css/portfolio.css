@@ -327,3 +327,21 @@
     background: #1e3a5f;
     transition: all .3s;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .main {
+        margin-left: 25vw;
+        width: calc(75%-0px);
+        height: calc(100vh-7vh);
+    }
+
+    .pf-main > div {
+        min-height: calc((100vh-7vh)/2);
+        width: 100%;
+    }
+
+    html {
+        overflow: hidden;
+    }
+}
