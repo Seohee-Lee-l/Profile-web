@@ -232,7 +232,7 @@ $(function() {
         $('.main').scrollTop(0);
 
         // 슬라이드 설정
-        setTimeout(() => setupInfiniteSlide('.work02-images'), 100);
+        setTimeout(()=> setupInfiniteSlide('.work02-images'), 100);
     });
 
     $("#work03Btn").on('click', function() {

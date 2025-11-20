@@ -301,6 +301,14 @@ body.dark-mode .img ul li img {
     border: 1px solid #414141;
 }
 
+body.dark-mode .left-section .left #footer .footer2 a:hover {
+    color: #1e3a5f;
+}
+
+body.dark-mode .main .main-section .em:hover {
+    color: #9eb7da;
+}
+
 /* 스크롤바 */
 body.dark-mode::-webkit-scrollbar {
     width: 10px;
