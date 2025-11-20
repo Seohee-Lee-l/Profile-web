@@ -302,6 +302,8 @@ a {
     height: 5vh;
     line-height: 5vh;
     border-bottom: 1px solid #ddd;
+    background: #fff;
+    z-index: 99;
 }
 
 .main-title h4 {

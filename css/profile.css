@@ -64,3 +64,40 @@
     font-size: 3rem;
     width: 15%;
 }
+
+
+
+/* Responsive Design (tablet and mobile) */
+@media screen and (max-width: 1199px) {
+    .main {
+        margin-left: 25%;
+    }
+
+    .main .main-section {
+        width: 75%;
+        height: 100vh;
+    }
+
+    .main .main-section .main-name {
+        top: 12%;
+        right: -20%;
+        font-size: 1.5rem;
+    }
+
+    .main .main-section .main-role {
+        top: 17%;
+        right: -20%;
+        font-size: 0.5rem;
+    }
+
+    .main .main-section .em {
+        top: 55%;
+        font-size: 0.5rem;
+    }
+
+    .main .main-section .copy {
+        top: 57%;
+        width: 25%;
+        font-size: 1.5rem;
+    }
+}

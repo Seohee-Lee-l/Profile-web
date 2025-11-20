@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* Responsive Design (tablet and mobile) */
+@media screen and (max-width: 1024px) {
+    .left-section {
+        width: 25vw;
+    }
+
+    .left-section #header {
+        width: 100%;
+        height: 7vh;
+    }
+
+    .left-section #header button {
+        font-size: 0.7rem;
+    }
+
+    .left-section .left .section1 {
+        width: 100%;
+    }
+
+    .left-section .left .section1 ul li a, .left-section .left .section2 ul li a {
+        font-size: 0.6rem;
+    }
+
+    .left-section .left .clear {
+        height: 2rem;
+    }
+
+    .left-section .left .dark {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .left-section .left .dark .dlBtn {
+        font-size: 0.7rem;
+    }
+
+    .left-section .left #footer {
+        width: 100%;
+        height: 5vh;
+    }
+
+    .left-section .left #footer .footer1 p {
+        font-size: 0.5rem;
+    }
+
+    .left-section .left #footer .footer2 a {
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+
+    .left-section .left #footer .footer3 p {
+        font-size: 0.4rem;
+    }
+
+    .main-title {
+        height: 7vh;
+        left: 25vw;
+        line-height: 7vh;
+    }
+
+    .main-title h4 {
+        font-size: 0.75rem;
+    }
+}

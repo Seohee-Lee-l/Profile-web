@@ -115,3 +115,19 @@
 .main .main-section .skill-box .sk.etc .skills .skill:nth-child(5) {
     animation-delay: 2.8s;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .main .main-section {
+        margin-top: 8vh;
+    }
+
+    .main .main-section .skill-box .skill {
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .main .main-section .skill-box .skill .bar {
+        width: 30%;
+    }
+}
