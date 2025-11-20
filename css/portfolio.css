@@ -327,10 +327,3 @@
     background: #1e3a5f;
     transition: all .3s;
 }
-
-
-@media screen and (max-width: 1024px) {
-    .main {
-        margin-left: 25vw;
-    }
-}

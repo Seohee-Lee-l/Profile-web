@@ -34,6 +34,7 @@ a {
     height: 100%;
     width: 18vw;
     border-right: 1px solid #ddd;
+    z-index: 99;
 }
 
 .left-section #header {
