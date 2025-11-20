@@ -28,7 +28,7 @@ $(function() {
         // 이미지 로드 완류 카운터
 
         const totalImages=$images.length/2;
-        // 이미지 복제본 고려
+        // 이미지 복제본
         
         $images.find('img').on('load', function() {
             loadedImages++;
