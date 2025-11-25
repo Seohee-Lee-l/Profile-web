@@ -283,6 +283,15 @@ $(function() {
         setTimeout(() => setupInfiniteSlide('.work06-images'), 100);
     });
 
+    $('#work07Btn').on('click', function() {
+        $('#work07').show();
+        $('.pf-main').hide();
+        $('#work01, #work02, #work03, #work04, #work05, #work06').hide();
+        $(this).addClass('selected').siblings().removeClass('selected');
+
+        $('.main').scrollTop(0);
+    });
+
 
     // 포트폴리오 페이지 - 메인 그리드 Work 버튼 클릭
     $(".w01").on('click', function() {
@@ -355,6 +364,15 @@ $(function() {
 
         // 슬라이드 설정
         setTimeout(() => setupInfiniteSlide('.work06-images'), 100);
+    });
+
+    $('.w07').on('click', function() {
+        $('#work07').show();
+        $('.pf-main').hide();
+        $('#work01, #work02, #work03, #work04, #work05, #work06').hide();
+        $('#work07Btn').addClass('selected').siblings().removeClass('selected');
+
+        $('.main').scrollTop(0);
     });
     
     // Down 버튼 (포트폴리오 페이지)
